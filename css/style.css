@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: rgb(31, 2, 15);
+    --secondary: hsl(0, 0%, 100%);
+    --alternative: rgba(219, 106, 202, 0.8);
+    --awesomeColor: rgb(84, 47, 107);
+    --otherColor: #f211f2;
+}
+  :is( wrapper, class, fn keys){
+    display: flex;
+  }
+
+
+  #wrapper {
+    background-color: var(--secondary);
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+  }
+
